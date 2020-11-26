@@ -1,0 +1,19 @@
+/* pages/wxml/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.weui-cell__hd{padding-right:16px;font-size:0}
+.weui-cell__hd{position:relative}
+.cell{
+  display: flex;
+  flex-direction: row;
+}
+
+.imageStyle{
+  width: 30rpx;
+  height:30rpx; 
+  display: block;
+}

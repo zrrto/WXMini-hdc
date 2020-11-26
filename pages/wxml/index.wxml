@@ -1,0 +1,15 @@
+<!--pages/wxml/index.wxml-->
+<view  wx:for="{{filesInfo}}">
+  <view class="cell" bindtap="previewFile" data-name="{{item.name}}">
+  <view class="weui-cell__hd" style="position: relative; margin-right: 10px;">
+					<image src="{{item.image}}" style="width: 50px;height:50px; display: block;"></image>
+					<text class="weui-badge" style="position: absolute; top: -0.4em; right: -0.4em;">8</text>
+				</view>
+  <view class="weui-cell__bd">
+					<view>{{item.name}}</view>
+					<view style="font-size: 13px; color: #888;">{{item.size}}</view>
+				</view>
+      </view>
+</view>
+
+
