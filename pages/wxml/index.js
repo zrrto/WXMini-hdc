@@ -69,11 +69,13 @@ Page({
    * 用户点击文件视图
    */
   previewFile: function (e) {
-
-     wx.showToast({
-       title:e.currentTarget.dataset.name,
-       icon:'success',
-       duration:1000
+     wx.navigateTo({
+       url:'../../pages/index/index?{{e.currentTarget.dataset.name}}'
      })
+    //  wx.showToast({
+    //    title:e.currentTarget.dataset.name,
+    //    icon:'success',
+    //    duration:1000
+    //  })
   }
 })
